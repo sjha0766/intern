@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(17, 17, 104);
+    padding: 10px;
+}
+
+.header-buttons {
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.header-buttons button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: white;
+    color: rgb(21, 21, 77);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.navbar{
+    height: 70px;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:rgb(18, 18, 67);
+    font-weight: bold;
+    margin-right: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: white;
+    color: rgb(18, 18, 67);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8f9fa;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(18, 18, 67);
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(18, 18, 67);
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .section{
+    height: 370px;
+    width: 100%;
+    border: 2px solid black;
+    background-color:rgb(18, 18, 67) ;
+  }
+
+  .img{
+    padding-left: 150px;
+    padding-top:25px ;
+  }
+
+  #sectionF{
+    margin-top: 90px;
+  }
+
+  .p-4 {
+    padding: 0.5rem!important;
+}
+
+@keyframes moveHeading {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px); /* Adjust the distance the heading should move */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .moving-heading {
+    animation: moveHeading 4s infinite; /* Adjust the duration of the animation */
+  }
