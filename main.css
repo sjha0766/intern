@@ -15,7 +15,9 @@ header {
 .header-buttons {
     margin-right: auto;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
 }
 
 .header-buttons button {
@@ -111,3 +113,10 @@ header {
   .moving-heading {
     animation: moveHeading 4s infinite; /* Adjust the duration of the animation */
   }
+  .sticky-form {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    z-index: 1000;
+}
